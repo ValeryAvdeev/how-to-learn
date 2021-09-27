@@ -23,10 +23,9 @@
 
 .logo {
   width: 183px;
-  height: 32px;
 }
 
-.header_indent {
+.header_left_indent {
   margin-left: 64px;
 }
 
@@ -45,16 +44,18 @@
   position: absolute;
   align-self: flex-end;
   justify-content: center;
-
-  width: 388px;
+  max-width: 388px;
+  margin-top: 0;
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed;
 }
 
 .header__main-illustration {
@@ -64,6 +65,7 @@
   display: flex;
   bottom: 0;
   right: 0;
+  object-fit: cover;
   z-index: 1;
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -71,7 +73,7 @@
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
-  margin-top: 64px;
+  top: 64px;
   position: absolute;
   right: 0;
   order: -1;
@@ -89,7 +91,6 @@ description
 
 .two-columns {
   margin: auto;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -97,36 +98,36 @@ description
   width: 80%;
 }
 
-.brief {
+.two-columns__brief {
   width: 175px;
-
   align-self: flex-start;
-
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
 .two-columns_content_indent {
   margin: 0;
 }
 
-.main-text {
-  width: 80%;
+.two-columns__main-text {
+  max-width: 80%;
   min-width: 784px;
 }
 
-.paragraph {
+.two-columns__paragraph {
   align-self: flex-start;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
 }
+
 .paragraph_span {
   margin: 30px 0;
 }
 
-.span-accent {
+.two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
@@ -151,7 +152,6 @@ digits
   display: flex;
   justify-content: center;
   margin: auto;
-
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
@@ -162,7 +162,6 @@ digits
   margin: 20px 0 0 0;
   display: flex;
   justify-content: center;
-
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -170,7 +169,6 @@ digits
 
 .table {
   width: 1100px;
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -204,16 +202,15 @@ feynman
 */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
   position: relative;
-
   background-color: #f2f2f2;
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin: 100px 0 0 0;
   display: flex;
   justify-content: center;
@@ -244,10 +241,10 @@ feynman
   right: 48px;
   top: 50%;
   text-decoration: none;
-
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
+  color: #2f80ed;
 }
 
 .feynman__images {
@@ -255,7 +252,6 @@ feynman
   display: flex;
   bottom: 0;
   left: 0;
-  /* order: 3; */
   z-index: 1;
 }
 
@@ -269,10 +265,8 @@ Kaufman
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #1f1f1f;
   position: relative;
-  /* margin-bottom: 90px; */
-
   overflow: hidden;
 }
 
@@ -294,11 +288,10 @@ footer
 
 .footer {
   min-height: 350px;
-
   display: flex;
   justify-content: center;
   position: relative;
-  background-color: #000;
+  background-color: #1f1f1f;
 }
 
 .footer__columns {
@@ -368,11 +361,22 @@ footer
 /* и элемента с модификатором вида ключ-значение */
 
 .logo_place_header {
+  height: 32px;
   margin-top: 30px;
   position: absolute;
 }
 
-.title_theme_dark {
+.logo_place_footer {
+  height: 35px;
+  margin: 0;
+  display: flex;
+}
+
+.logo_size_width {
+  width: 183px;
+}
+
+.section-title_theme_dark {
   margin-top: 90px;
   color: white;
   line-height: 1.15;
@@ -380,7 +384,8 @@ footer
   font-weight: bold;
   z-index: 2;
 }
-.subtitle_theme_dark {
+
+.section-subtitle_theme_dark {
   color: white;
   line-height: 34px;
   font-size: 24px;
@@ -401,19 +406,14 @@ footer
   z-index: 2;
 }
 
-.heading_theme_dark {
+.table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
-.text_theme_dark {
+.table__table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-
-.logo_place_footer {
-  margin: 0;
-  position: absolute;
 }
