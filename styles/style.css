@@ -249,7 +249,9 @@ feynman
 
 .feynman__images {
   position: absolute;
-  display: flex;
+  width: 867px;
+  height: 637px;
+  background: url("../images/feynman.png");
   bottom: 0;
   left: 0;
   z-index: 1;
@@ -301,17 +303,30 @@ footer
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_copyright {
-  flex-direction: row;
-  justify-content: flex-start;
   flex-basis: 711px;
+  justify-content: space-between;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.footer__column_content_social {
+  display: flex;
+  margin: 0;
 }
 
 .footer__author {
-  position: absolute;
   left: 0;
   bottom: 0;
   margin: 18px 0;
@@ -319,13 +334,6 @@ footer
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.footer__column_content_info {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0;
 }
 
 .footer__column-heading {
@@ -412,7 +420,7 @@ footer
   font-weight: bold;
 }
 
-.table__table__text_theme_dark {
+.table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
