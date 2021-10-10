@@ -151,6 +151,12 @@ Footer
 @import url(../blocks/footer/__column/_content/footer__column_content_info.css);
 @import url(../blocks/footer/__column/_content/footer__column_content_social.css);
 
+/*
+===================
+Rotation
+===================
+*/
+
 @import url(../blocks/rotation/rotation.css);
 
 .page {
