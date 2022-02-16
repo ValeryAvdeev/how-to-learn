@@ -9,8 +9,8 @@
 _Резиновая верстка_
 
 ## Технологии
-_Flex_, _Animation_, _Keyframes_, _Transition_, _Position_, _Git_, _БЭМ_.
+_flex_, _animation_, _keyframes_, _transition_, _position_, _Git_, _БЭМ_.
 
-### Проект завершон
+### Проект завершён
 
 
